@@ -35,3 +35,34 @@ we iterate over using a loop three times and print the result to the user as an 
 
 
 """
+
+import random
+
+def main():
+    for i in range(0, 3):
+        spin()
+
+def spin():
+    rand_num=random.randint(1, 20)
+    output= ""
+
+    if(rand_num > 15):
+            output="Cherries"
+    elif(rand_num>10):
+        ouptut="Orange"
+    elif(rand_num>5):
+        ouptut="Plum"
+    elif(rand_num>2):
+        ouptut="Bell"
+    elif(rand_num>1):
+        ouptut="Melon"
+    else:
+        output="Bar"
+
+    print(output, end="")
+
+main()
+
+
+
+
