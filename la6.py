@@ -59,7 +59,7 @@ def spin():
     else:
         output="Bar"
 
-    print(output, end="")
+    print(output, end=" ")
 
 main()
 
